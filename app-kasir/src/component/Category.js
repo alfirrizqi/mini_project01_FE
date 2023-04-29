@@ -1,5 +1,5 @@
 import React from "react";
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import axios from 'axios'
 
 export default function Category() {
@@ -22,7 +22,7 @@ export default function Category() {
             <h1 className="Category_name">{Category.name}</h1>
             <p className="Category_price">{Category.price}</p>
             <p className="Category_description">{Category.description} </p>
-            
+
         </div>
     )
 }
