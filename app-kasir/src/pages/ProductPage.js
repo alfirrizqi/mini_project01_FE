@@ -28,16 +28,18 @@ const ProductPage = () => {
         <div className="App">
             <Navbar />
             <Row>
+                <Col>
                 <h1 style={{ marginBottom: '15px' }}><strong>Daftar Kategori</strong></h1>
                 <ListCategories />
-                <Col>
-                <h1 style={{ marginBottom: '15px', flexDirection: 'row-reverse' }}><strong>Daftar Produk</strong></h1>
-                <hr/>
-                <Row className="justify-content-md-center">
-                    <MenuProduct />
-                </Row>
+                </Col>  
+                <Col> 
+                    <Row>
+                    <h1 style={{ marginBottom: '15px', flexDirection: 'row-reverse' }}><strong>Daftar Produk</strong></h1>
+                    <hr />
+                     <MenuProduct />
+                    </Row>
                 </Col>
-                
+
             </Row>
 
 
