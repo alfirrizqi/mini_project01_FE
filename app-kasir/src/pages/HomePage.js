@@ -1,12 +1,24 @@
 import ProductCarousel from "../component/CarouselPage"
-import { Container } from "react-bootstrap";
+import { Container} from "react-bootstrap";
+import Navbar from '../component/Navbar'
+
+
 
 
 const HomePage = () => {
     return(
-        <Container>
-        <ProductCarousel />
-        </Container>
+        <>
+        <Navbar />
+        <div className="mt-5">
+            <Container>
+                <ProductCarousel />
+            </Container>
+
+        </div>
+      
+        
+        </>
+        
         
     )
 }

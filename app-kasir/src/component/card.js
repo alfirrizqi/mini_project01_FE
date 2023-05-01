@@ -1,6 +1,6 @@
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
-
+import {numberWithCommas} from '../utilities/fontsNumber'
 
 
 
@@ -15,9 +15,8 @@ function CardProduct({data}) {
         <Card.Text>
           {data.description}
           <Card.Text>
-          {('Rp.'+ data.price)}
-          </Card.Text>
-          
+         Rp. {numberWithCommas(data.price)}
+          </Card.Text>     
         </Card.Text>
         <Button variant="primary">Add To Cart</Button>
       </Card.Body>
