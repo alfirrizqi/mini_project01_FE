@@ -30,6 +30,7 @@ const ProductPage = () => {
             <Row>
                 <Col>
                 <h1 style={{ marginBottom: '15px' }}><strong>Daftar Kategori</strong></h1>
+                <hr/>
                 <ListCategories />
                 </Col>  
                 <Col> 
